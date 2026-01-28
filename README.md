@@ -15,8 +15,23 @@ Inspirada no BIRL, mas cheia de alma tuga, facilitando o processo básico de apr
    git clone https://github.com/Jcmora0201/pytuga.git
    cd pytuga
    ```
-   
-2. como mostrar (print):
+2. Usar com o interpretador python:
+
+Depois de escrver o código, guarda como (nome).pytuga
+
+Depois:
+
+Abre o terminal (CMD, PowerShell, Terminal no Mac/Linux) e vai para a pasta onde estão os ficheiros, e executa:
+   ```pytuga
+   python pytuga.py (nome).pytuga
+   ```
+ou para Python 3:
+   ```pytuga
+python3 pytuga.py ola.pytuga
+   ```
+<h1> Sintaxe Rápida</h1>
+
+→ Como mostrar (print):
    ```pytuga
    mostrar ("Alguma coisa")
    ```
@@ -45,8 +60,6 @@ Ex.:
   mostrar negrito sublinhado fundo [azul] [255 234 0] [255 255 255] com cor [vermelho] a [85%] ("...")
    ```
 (negrito a azul | sublinhado a 255 234 0 | fundo a 255 255 255 | com cor da letra vermelho | com 85% transparência)
-
-<h1> Sintaxe Rápida</h1>
 
 → Início e fim:
 ```pytuga
