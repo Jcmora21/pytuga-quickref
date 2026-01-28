@@ -1,9 +1,9 @@
-# PyTuga – A Linguagem de Programação Tuga Meme
+<h1>PyTuga – A Linguagem de Programação Tuga</h1>
 
 PyTuga é uma linguagem de programação 100% portuguesa, criada por mim (**José Carlos (@Jcmora0201)**) nos Açores.  
-Inspirada no BIRL, mas cheia de alma tuga: gírias do dia a dia, realidade show, funil, saudade açoriana e um grande “Bora lá pá!”.
+Inspirada no BIRL, mas cheia de alma tuga, facilitando o processo básico de aprender a programar usando vocabulário do dia a dia.
 
-É interpretada em Python e serve para aprender programação de forma clara e fácil.
+É interpretada em Python e serve para aprender programação de forma clara e mais fácil.
 
 **Última atualização:** Janeiro 2026  
 **Versão atual:** 1.0 (cores RGB, rainbow degrade suave na frase inteira, listas normais e associativas, proteção contra erros, percorrer chaves/valores/pares, ordenação, remoção segura e mais)
@@ -21,37 +21,40 @@ Inspirada no BIRL, mas cheia de alma tuga: gírias do dia a dia, realidade show,
    mostrar ("Alguma coisa")
    ```
    
-O texto sempre dentro de parênteses: ("...")
+→ O texto sempre dentro de parênteses: ("...")
 
-Sem cor especificada → branco padrão (255 255 255)
+→ Sem cor especificada → branco padrão (255 255 255)
 
-Cores pré-definidas (100% intensidade por default): vermelho, verde, azul, amarelo, branco, rosa, laranja, roxo
+→ Cores pré-definidas (100% intensidade por default): vermelho, verde, azul, amarelo, branco, rosa, laranja, roxo
 
-Se quiseres outra cor → usa formato RGB direto [R G B] entre 0 e 255. 
+→ Se quiseres outra cor → usa formato RGB direto [R G B] entre 0 e 255. 
 Ex.: 
   ```pytuga
   mostrar com cor [100 149 237]
   ```
 
-Transparência/intensidade em % (opcional, depois da cor): 
+→ Transparência/intensidade em % (opcional, depois da cor): 
 Ex.:
   ```pytuga
   mostrar com cor [verde] a [70%] ("....")
   ```
 
-Modificadores (negrito, sublinhado, fundo) antes da cor. Com cores respetivamente. 
+→ Modificadores (negrito, sublinhado, fundo) antes da cor. Com cores respetivamente. 
 Ex.: 
   ```pytuga
-  mostrar negrito sublinhado fundo [azul] [255 234 0] [255 255 255] com cor [vermelho] a [85%] ("...") (negrito a azul | sublinhado a 255 234 0 | fundo a 255 255 255 | com cor da letra vermelho)
-  ```
-## Sintaxe Rápida
-Início e fim:
+  mostrar negrito sublinhado fundo [azul] [255 234 0] [255 255 255] com cor [vermelho] a [85%] ("...")
+   ```
+(negrito a azul | sublinhado a 255 234 0 | fundo a 255 255 255 | com cor da letra vermelho | com 85% transparência)
+
+<h1> Sintaxe Rápida</h1>
+
+→ Início e fim:
 ```pytuga
   Bora
   //codigo aqui
   Oh desligou!
   ```
-Variáveis:
+→ Variáveis:
   ```pytuga
   definir nome como "José Carlos"
   definir idade como 33
@@ -59,11 +62,15 @@ Variáveis:
   definir tem_bi como verdadeiro
   definir saldo como 45.50
   ```
-Input:
+→ Input:
   ```pytuga
   perguntar: ("Qual é o teu nome?") guardar em nome
   ```
-Condições:
+(Para guardar o valor em uma variável):
+   ```pytuga
+    ... guardar em (nome da variável) //como no exemplo assima apresentado
+   ```
+→ Condições:
   ```pytuga
   se idade >= 18 então
     mostrar verde: ("Maior de idade!")
@@ -73,7 +80,7 @@ senão
     mostrar vermelho: ("Criança!")
 então pronto
   ```
-Ciclos Enquanto:
+→ Ciclos Enquanto:
   ```pytuga
   definir cont como 0
 enquanto cont < 5 
@@ -81,7 +88,7 @@ enquanto cont < 5
     aumenta cont em 1
 então acaba
   ```
-Para cada (chaves / valores / pares):
+→ Para cada (chaves / valores / pares):
    ```pytuga
    para cada chave em chaves da lista idades 
     mostrar chave
@@ -95,7 +102,24 @@ para cada par em pares da lista idades
     mostrar par.chave + " tem " + str(par.valor) + " anos"
 fim para cada
    ```
-## Listas 
+<h1>Listas</h1> 
+
+1. Lista mista (qualquer tipo: strings, números, booleanos, etc.)
    ```pytuga
-criar lista 
+   criar lista de coisas [nome da lista] com "texto" , 42 , verdadeiro , 3.14
    ```
+2. Lista só de números
+   ```pytuga
+   criar lista de numeros [nome da lista] com 10 , 20.5 , 30 , -7
+   ```
+3. Lista só de strings
+   ```pytuga
+   criar lista [nome da lista] com "maçã" , "banana" , "pera"
+   ```
+<h1>Notas Importantes</h1>
+
+→ Em listas de coisas → permite misturar tudo (strings com aspas, números (apenas entre vírgulas), booleanos).
+
+→ Em listas de numeros → só aceita números (inteiros/decimais) – se colocares string dá erro no interpretador.
+
+→ Em listas normais (sem "de coisas" nem "de numeros") → só strings com aspas.
