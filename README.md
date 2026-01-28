@@ -81,3 +81,21 @@ enquanto cont < 5
     aumenta cont em 1
 então acaba
   ```
+Para cada (chaves / valores / pares):
+   ```pytuga
+   para cada chave em chaves da lista idades 
+    mostrar chave
+fim para cada
+
+para cada valor em valores da lista idades 
+    mostrar str(valor)
+fim para cada
+
+para cada par em pares da lista idades 
+    mostrar par.chave + " tem " + str(par.valor) + " anos"
+fim para cada
+   ```
+## Listas 
+   ```pytuga
+criar lista 
+   ```
